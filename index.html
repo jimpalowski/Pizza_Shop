@@ -2,8 +2,62 @@
 <html>
 <head>
     <title>Pizza Shop</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-    
+    <h1>Welcome to the pizza Shop</h1>
+    <h1><img src="https://www.billy-pizzeria.com/public/shop-images/billy-pizzeria-andenne-seilles-logo.png" alt="pizza"></h1>
+    <form id="pizzaForm">
+    <div class="container">
+        <div class="show-form"></div>
+        <div class="row">
+            <div class="col-md-6" id="pizzaImg">
+                <img src="http://www.stickpng.com/assets/images/58738081f3a71010b5e8ef3a.png" alt="">   
+            </div>
+            <div class="col-md-6">
+                <h1>Size</h1>
+                <input class="form-check-input" type="radio" name="size" id="sizeSpace">
+                <label class="form-check-label" for="exampleRadios1">
+                  Small
+                </label>
+                <br>
+                <input class="form-check-input" type="radio" name="size" id="sizeSpace">
+                <label class="form-check-label" for="exampleRadios1">
+                  Medium
+                </label>
+                <br>
+                <input class="form-check-input" type="radio" name="size" id="sizeSpace">
+                <label class="form-check-label" for="exampleRadios1">
+                  Large
+                </label>
+                <h1>Toppings</h1>
+                <label class="checkbox-inline"></label> 
+                <input type="checkbox" value="cheese"> - Cheese
+                <label class="checkbox-inline"></label> 
+                <input type="checkbox" value="sausage"> - Sausage
+                <label class="checkbox-inline"></label> 
+                <input type="checkbox" value="peperoni"> - Peperoni
+                <h1>Sauce</h1>
+                <input class="form-check-input" type="radio" name="sauce" id="sizeSpace">
+                <label class="form-check-label" for="exampleRadios1">
+                  Marinara
+                </label>
+                <br>
+                <input class="form-check-input" type="radio" name="sauce" id="sizeSpace">
+                <label class="form-check-label" for="exampleRadios1">
+                  Tomato
+                </label>
+                <br>
+                <input class="form-check-input" type="radio" name="sauce" id="sizeSpace">
+                <label class="form-check-label" for="exampleRadios1">
+                  Alfredo
+                </label>
+            </div>
+        </div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,25 @@
+h1 img{
+  width:20%;
+  height:auto;
+}
+body{
+  background-image: url(http://pdled.com.br/wp-content/uploads/2016/10/pdled-ilumina%C3%A7%C3%A3o-indireta.jpeg);
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    color:white;
+    
+}
+
+h1{
+  text-align: center;
+}
+
+#sizeSpace{
+  text-align: center;
+}
+
+#pizzaImg img{
+  float: middle;
+  width:90%;
+}
