@@ -29,7 +29,7 @@ $("#pizzaForm").submit(function(event){
       else {
         pizzaPrice;
       }
-
+      // had some issues selecting multiple toppings
     if (newPizza.toppings === ("Cheese") || newPizza.toppings === ("Sausage") || newPizza.toppings === ("Pepperoni")) {
       pizzaPrice += 2;
     }  else {
