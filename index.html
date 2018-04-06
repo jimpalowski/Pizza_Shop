@@ -8,7 +8,7 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1>Welcome to the pizza Shop</h1>
+    <h1>Welcome to the Pizza Shop</h1>
     <h1><img src="https://www.billy-pizzeria.com/public/shop-images/billy-pizzeria-andenne-seilles-logo.png" alt="pizza"></h1>
     <form id="pizzaForm">
     <div class="container">
@@ -19,44 +19,54 @@
             </div>
             <div class="col-md-6">
                 <h1>Size</h1>
-                <input class="form-check-input" type="radio" name="size" id="sizeSpace">
-                <label class="form-check-label" for="exampleRadios1">
-                  Small
-                </label>
-                <br>
-                <input class="form-check-input" type="radio" name="size" id="sizeSpace">
-                <label class="form-check-label" for="exampleRadios1">
-                  Medium
-                </label>
-                <br>
-                <input class="form-check-input" type="radio" name="size" id="sizeSpace">
-                <label class="form-check-label" for="exampleRadios1">
-                  Large
-                </label>
+                <div class="form-group" id="Sauce">
+                    <label for="text">Pick your pizza size</label>
+                        <div class="radio">
+                        <label>
+                            <input type="radio"  name="pizzaSize"value="Small">
+                            <em>Small</em>
+                            <input type="radio" name="pizzaSize"value="Medium">
+                            <em>Medium</em>
+                            <input type="radio" name="pizzaSize"value="Large">
+                            <em>Large</em>
+                        </label>
+                        </div>
+                    </div>
+
+
                 <h1>Toppings</h1>
-                <label class="checkbox-inline"></label> 
-                <input type="checkbox" value="cheese"> - Cheese
-                <label class="checkbox-inline"></label> 
-                <input type="checkbox" value="sausage"> - Sausage
-                <label class="checkbox-inline"></label> 
-                <input type="checkbox" value="peperoni"> - Peperoni
+                <div class="form-group" id="Toppings">
+                <label for="text">Pick your pizza toppings.</label>
+                <div class= "checkbox">
+                <label>
+                <input type="checkbox" value="Cheese" name="pizzaToppings"> - Cheese
+                <input type="checkbox" value="Sausage" name="pizzaToppings"> - Sausage
+                <input type="checkbox" value="Pepperoni" name="pizzaToppings"> - Pepperoni
+                </label>
+                </div>
                 <h1>Sauce</h1>
-                <input class="form-check-input" type="radio" name="sauce" id="sizeSpace">
-                <label class="form-check-label" for="exampleRadios1">
-                  Marinara
-                </label>
+                <div class="form-group" id="Size">
+                    <label for="text">Pick your pizza sauce.</label>
+                        <div class="radio">
+                        <label>
+                                <input type="radio"  name="pizzaSauce"value="Tomato">
+                                <em>Tomato</em>
+                                <input type="radio" name="pizzaSauce"value="Marinara">
+                                <em>Marinara</em>
+                                <input type="radio" name="pizzaSauce"value="Alfredo">
+                                <em>Alfredo</em>
+                        </label>
+                        </div>
+                    </div>
                 <br>
-                <input class="form-check-input" type="radio" name="sauce" id="sizeSpace">
-                <label class="form-check-label" for="exampleRadios1">
-                  Tomato
-                </label>
-                <br>
-                <input class="form-check-input" type="radio" name="sauce" id="sizeSpace">
-                <label class="form-check-label" for="exampleRadios1">
-                  Alfredo
-                </label>
+                <button type="submit" class="btn btn-primary">Order</button>
             </div>
+            
         </div>
+        <div class="Results">
+        <h1>Your Total is:</h1>
+        <p>Your cost is: $<span class="pizzaCost"></span> Dollars</p>
+                </div>
         </form>
     </div>
 </body>

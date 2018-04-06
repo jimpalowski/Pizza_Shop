@@ -23,3 +23,9 @@ h1{
   float: middle;
   width:90%;
 }
+
+.Results{
+  text-align:center;
+  margin-top: 50px;
+  display: none;
+}
